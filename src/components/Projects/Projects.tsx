@@ -19,18 +19,20 @@ const Projects = () => {
 						<span>NextJS</span>
 						<span>SQL</span>
 					</p>
-					<a
-						href="https://dark-studio-blog.vercel.app/"
-						className="green-color-hover"
-					>
-						Voir le site
-					</a>
-					<a
-						href="https://github.com/Hitch95/Dark_Studio_Blog"
-						className="green-color-hover"
-					>
-						Voir le Repo Github
-					</a>
+					<div className="links-container">
+						<a
+							href="https://dark-studio-blog.vercel.app/"
+							className="green-color-hover"
+						>
+							Voir le site
+						</a>
+						<a
+							href="https://github.com/Hitch95/Dark_Studio_Blog"
+							className="green-color-hover"
+						>
+							Voir le Repo Github
+						</a>
+					</div>
 				</div>
 			</div>
 
@@ -44,18 +46,20 @@ const Projects = () => {
 						<span>MUI</span>
 						<span>Supabase</span>
 					</p>
-					<a
-						href="https://cyclades-a11-y.vercel.app/"
-						className="green-color-hover"
-					>
-						Voir le site
-					</a>
-					<a
-						href="https://github.com/Hitch95/Cyclades_A11Y"
-						className="green-color-hover"
-					>
-						Voir le Repo Github
-					</a>
+					<div className="links-container">
+						<a
+							href="https://cyclades-a11-y.vercel.app/"
+							className="green-color-hover"
+						>
+							Voir le site
+						</a>
+						<a
+							href="https://github.com/Hitch95/Cyclades_A11Y"
+							className="green-color-hover"
+						>
+							Voir le Repo Github
+						</a>
+					</div>
 				</div>
 			</div>
 
@@ -69,18 +73,20 @@ const Projects = () => {
 						<span>MUI</span>
 						<span>Wagmi</span>
 					</p>
-					<a
-						href="https://etherscore-test.vercel.app/"
-						className="green-color-hover"
-					>
-						Voir le site
-					</a>
-					<a
-						href="https://github.com/Hitch95/etherscore_test"
-						className="green-color-hover"
-					>
-						Voir le Repo Github
-					</a>
+					<div className="links-container">
+						<a
+							href="https://etherscore-test.vercel.app/"
+							className="green-color-hover"
+						>
+							Voir le site
+						</a>
+						<a
+							href="https://github.com/Hitch95/etherscore_test"
+							className="green-color-hover"
+						>
+							Voir le Repo Github
+						</a>
+					</div>
 				</div>
 			</div>
 
@@ -94,15 +100,17 @@ const Projects = () => {
 						<span>Twig</span>
 						<span>Doctrine</span>
 					</p>
-					<a href="" className="green-color-hover">
-						Voir le site
-					</a>
-					<a
-						href="https://github.com/Hitch95/DoctoMed"
-						className="green-color-hover"
-					>
-						Voir le Repo Github
-					</a>
+					<div className="links-container">
+						<a href="" className="green-color-hover">
+							Voir le site
+						</a>
+						<a
+							href="https://github.com/Hitch95/DoctoMed"
+							className="green-color-hover"
+						>
+							Voir le Repo Github
+						</a>
+					</div>
 				</div>
 			</div>
 		</section>
