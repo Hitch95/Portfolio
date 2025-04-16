@@ -1,4 +1,5 @@
 import "./Presentation.css";
+import myProfilePicture from "../../../src/assets/images/my_picture.webp";
 
 const Presentation = () => {
 	return (
@@ -55,11 +56,11 @@ const Presentation = () => {
 						</ul>
 					</div>
 					<div className="picture">
-						<img src="../../../src/assets/images/my_picture.webp" />
+						<img src={myProfilePicture} />
 					</div>
 					<div className="circle-container">
 						<img
-							src="../../../src/assets/images/pattern-circle.svg"
+							src="images/icons/pattern-circle.svg"
 							width={129}
 							height={129}
 							className="circle"
@@ -69,7 +70,7 @@ const Presentation = () => {
 
 				<div className="rings-container">
 					<img
-						src="../../../src/assets/images/pattern-rings.svg"
+						src="images/icons/pattern-rings.svg"
 						width={530}
 						height={129}
 						className="rings"
@@ -123,14 +124,14 @@ const Presentation = () => {
 					</div>
 					<div>
 						<h3>NodeJs</h3>
-						<p>1 An D'Expérience</p>
+						<p>2 Ans D'Expérience</p>
 					</div>
 				</div>
 				<span className="separator second"></span>
 			</section>
 			<div className="rings-container">
 				<img
-					src="../../../src/assets/images/pattern-rings.svg"
+					src="/images/icons/pattern-rings.svg"
 					width={530}
 					height={129}
 					className="rings"

@@ -31,7 +31,7 @@ const Contact = () => {
 			</form>
 			<div className="rings-container">
 				<img
-					src="../../../src/assets/images/pattern-rings.svg"
+					src="images/icons/pattern-rings.svg"
 					width={530}
 					height={129}
 					className="rings"

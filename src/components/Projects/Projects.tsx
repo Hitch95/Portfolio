@@ -91,7 +91,8 @@ const Projects = () => {
 					<p>
 						<span>PHP</span>
 						<span>Symfony</span>
-						<span>Javascript</span>
+						<span>Twig</span>
+						<span>Doctrine</span>
 					</p>
 					<a href="" className="green-color-hover">
 						Voir le site
