@@ -108,6 +108,7 @@ section.projects-container {
 
         @media screen and (min-width: 1440px) {
             width: 100%;
+            gap: 20px;
         }
 
         .background-img-project {
@@ -116,14 +117,78 @@ section.projects-container {
             background-repeat: no-repeat;
             height: 253px;
             width: 345px;
+            position: relative;
 
             @media screen and (min-width: 1440px) {
                 width: 540px;
                 height: 400px;
+                overflow: hidden;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgba(0, 0, 0, 0.7);
+                    opacity: 0;
+                    transition: opacity 0.3s ease;
+                    z-index: 2;
+                }
+
+                &:hover {
+                    &::before {
+                        opacity: 1;
+                    }
+
+                    >div.links-container {
+                        opacity: 1;
+                    }
+                }
+            }
+
+            >div.links-container {
+                display: none;
+
+                @media screen and (min-width: 1440px) {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    opacity: 0;
+                    z-index: 2;
+                    transition: opacity 0.3s ease;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 48px;
+                    height: 124px;
+                    width: auto;
+                    cursor: pointer;
+                }
+
+                a {
+                    @media screen and (min-width: 1440px) {
+                        text-decoration: none;
+                        padding-bottom: 08px;
+                        letter-spacing: 1px;
+                        color: #f3f3f3;
+                        text-transform: uppercase;
+                        font-size: 1em;
+                        font-weight: bold;
+                        border-bottom: 0.15rem solid #4ee1a0;
+
+                        &:hover {
+                            color: #4ee1a0;
+                        }
+                    }
+
+                }
             }
         }
 
-        .below-img-project {
+        div.below-img-project {
             display: grid;
             grid-template-rows: auto auto auto;
             grid-template-columns: 1fr;
@@ -133,23 +198,38 @@ section.projects-container {
                 font-size: 1.5em;
                 text-transform: uppercase;
                 grid-row: 1;
+
+                @media screen and (min-width: 1440px) {
+                    font-size: 22px;
+                }
             }
 
             p {
                 text-align: left;
                 grid-row: 2;
+                display: flex;
+                flex-direction: row;
+                gap: 18px;
 
                 >span {
                     text-transform: uppercase;
                     margin-right: 20px;
                 }
+
+                @media screen and (min-width: 1440px) {
+                    font-size: 22px;
+                }
             }
 
-            div.links-container {
+            >div.links-container {
                 grid-row: 3;
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
+
+                @media screen and (min-width: 1440px) {
+                    display: none;
+                }
 
                 a {
                     text-decoration: none;
