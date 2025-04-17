@@ -7,6 +7,7 @@ section.presentation-container {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        width: 735px;
     }
 
     @media screen and (min-width: 1440px) {
@@ -159,7 +160,7 @@ section.presentation-container {
 
                 @media screen and ((min-width: 768px) and (max-width: 1440px)) {
                     position: absolute;
-                    right: -64.5px;
+                    right: -30.5px;
                     bottom: 0;
                     z-index: 2;
                 }
@@ -207,6 +208,10 @@ section.presentation-container {
     }
 
     div.description {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
 
         @media screen and ((min-width: 768px) and (max-width: 1440px)) {
             order: 2;
@@ -215,9 +220,9 @@ section.presentation-container {
             margin-left: 2rem;
             margin-top: 151px;
             text-align: left;
-            display: flex;
-            flex-direction: column;
+            align-items: flex-start;
             position: relative;
+            z-index: 2;
         }
 
         @media screen and (min-width: 1440px) {
@@ -232,15 +237,17 @@ section.presentation-container {
         }
 
         header {
+            @media screen and ((min-width: 768px) and (max-width: 1440px)) {
+                margin-bottom: 36px;
+            }
+
             h3 {
-                margin: 0px;
                 text-align: center;
                 font-size: 1.8em;
 
                 @media screen and ((min-width: 768px) and (max-width: 1440px)) {
                     text-align: left;
                     font-size: 3.25em;
-                    margin-bottom: 60px;
                 }
 
                 @media screen and (min-width: 1440px) {
@@ -259,9 +266,8 @@ section.presentation-container {
             }
         }
 
-        p {
+        p:first-of-type {
             text-align: center;
-            padding: 0px 10px;
 
             @media screen and ((min-width: 768px) and (max-width: 1440px)) {
                 text-align: left;
@@ -272,16 +278,15 @@ section.presentation-container {
             }
         }
 
-        footer {
+        p:last-of-type {
             text-align: center;
             text-transform: uppercase;
             border-bottom: 0.15rem solid #4ee1a0;
-            margin: 24px auto 0 auto;
+            width: fit-content;
 
             @media screen and ((min-width: 768px) and (max-width: 1440px)) {
                 text-align: left;
                 width: fit-content;
-                margin: 24px 0 0 0;
             }
 
             @media screen and (min-width: 1440px) {

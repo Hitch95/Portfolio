@@ -88,11 +88,11 @@ const Presentation = () => {
 						création d'applications web accessibles que les utilisateurs
 						adorent.
 					</p>
-					<footer>
+					<p>
 						<a href="#contact" className="contact-me">
 							Me contacter
 						</a>
-					</footer>
+					</p>
 				</div>
 			</section>
 
