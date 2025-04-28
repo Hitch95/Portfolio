@@ -338,12 +338,16 @@ section.experiences-container {
         border-bottom: 1px solid #f3f3f3;
         width: 343px;
         margin: 0 auto;
+    }
 
-        @media screen and ((min-width: 768px) and (max-width: 1440px)) {
+    @media screen and (min-width: 768px) and (max-width: 1440px) {
+        span.separator.first::after {
             width: 708px;
         }
+    }
 
-        @media screen and (min-width: 1440px) {
+    @media screen and (min-width: 1440px) {
+        span.separator.first::after {
             width: 1110px;
         }
     }
@@ -354,8 +358,10 @@ section.experiences-container {
         border-bottom: 1px solid #f3f3f3;
         width: 343px;
         margin: 0 auto;
+    }
 
-        @media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) {
+        span.separator.second::after {
             display: none;
         }
     }
